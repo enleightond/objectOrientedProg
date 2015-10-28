@@ -5,6 +5,8 @@ var cat = function (firstName, tiredness, hungry, loneliness, happiness) {
 	this.loneliness = lonliness
 	this.happiness = happiness
 }
+cat.prototype.firstName = function(firstName)
+	
 cat.prototype.sleep = function(tiredness) {
   	if (tiredness.status = 0) {
   		console.log("sleepytime")		
@@ -12,19 +14,28 @@ cat.prototype.sleep = function(tiredness) {
 		console.log("playtime!")
 	}
   }
-cat.prototype.feed = function() {
-	
-		
+cat.prototype.feed = function(hungry) {
+	if (tiredness.status = 0) {
+  		console.log("dinnertime")		
+	} else {
+		console.log("playtime!")
 	}
-cat.prototype.pet = function() {
-	
-		
+  }
+cat.prototype.pet = function(loneliness) {
+	if (tiredness.status = 0) {
+  		console.log("cuddletime")		
+	} else {
+		console.log("playtime!")
 	}
-cat.prototype.purr = function() {
-	
-
+  }
+cat.prototype.purr = function(happiness) {
+	if (tiredness.status = 0) {
+  		console.log("playtime")		
+	} else {
+		console.log("alooftime!")
 	}
-
-}
+  }
+var loki = new cat ("Loki" 1,0,1,0,)
 
 console.log(cat);
+
